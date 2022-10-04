@@ -52,7 +52,7 @@ while True:
 
 		for __ in array:
 			outfor.append(__)
-			if random.randint(0,2) == 0 and len(outfor)>2 or __ == array[-1]:
+			if (random.randint(0,2) == 0 and len(outfor)>2) or __ == array[-1] or len(outfor) == 9:
 				out.append(sorted(range(1,len(outfor)+1), key = lambda x: random.random()))
 				outfor = []
 			
